@@ -21,6 +21,7 @@
     --SECONDARY-COLOR: #5b319e;
     --WHITE: #ffffff;
     --BLACK: #333;
+    --RED: red;
 
     /* || FONTS */
     --FF: "Nunito", sans-serif;
@@ -94,14 +95,64 @@ a:any-link {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.5;
+    padding-right: 20px;
 }
 
-.searchBar input{
+.header__logo .fa {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.searchBar {
+    position: relative;
+    color: var(--BLACK);
+}
+
+.search-input {
     border: none;
     outline: none;
-    background-color: #e6e7e9;
     border-radius: 15px;
     padding: var(--PADDING-S);
+    background-image: url('icon/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1.5rem;
+}
+
+.noti-container {
+    position: relative;
+}
+
+.noti-banner {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--WHITE);
+    border-radius: 50%;
+}
+
+.noti-banner i {
+    font-size: 24px;
+}
+
+.noti-count {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: var(--RED);
+    color: white;
+    font-size: 8px;
+    border-radius: 50%;
+}
+
+.other {
+    padding-left: 20px;
+    font-size: 1.5rem;
 }
 
 .aside {
@@ -123,15 +174,24 @@ a:any-link {
     color: var(--BLACK);
 }
 
+.aside__ul i {
+    padding: 0 10px;
+}
+
 .small__container {
     margin: 30px;
-    padding: 10px 30px;
+    padding: 10px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--WHITE);
     border-radius: var(--BORDER-RADUIS);
     cursor: context-menu;
+}
+
+.small__container i {
+    font-size: 1.5rem;
+    padding-left: 10px;
 }
 
 .small__container:nth-child(odd) {
